@@ -21,9 +21,6 @@ document.querySelector('button').addEventListener('click', firstName)
 function firstName() {
     let one = Number(document.querySelector('input[name="favColor"]:checked').value)
     let two = Number(document.querySelector('input[name="iceCream"]:checked').value)
-    let three = Number(document.querySelector('input[name="timeOfDay"]:checked').value)
-    let four = Number(document.querySelector('input[name="socialMedia"]:checked').value)
-    let five = Number(document.querySelector('input[name="travel"]:checked').value)
     console.log(one, two);
    
     if (one + two <= 3) {
@@ -61,6 +58,12 @@ function lastName() {
 }
 /*
 Note to self: thought process 
+
+   let one = Number(document.querySelector('input[name="favColor"]:checked').value)
+    let two = Number(document.querySelector('input[name="iceCream"]:checked').value)
+    let three = Number(document.querySelector('input[name="timeOfDay"]:checked').value)
+    let four = Number(document.querySelector('input[name="socialMedia"]:checked').value)
+    let five = Number(document.querySelector('input[name="travel"]:checked').value)
 
  //let one = randomNames()
     //let two = randomNames()
