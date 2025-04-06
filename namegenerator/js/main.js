@@ -24,15 +24,14 @@ function firstName() {
     let three = Number(document.querySelector('input[name="timeOfDay"]:checked').value)
     let four = Number(document.querySelector('input[name="socialMedia"]:checked').value)
     let five = Number(document.querySelector('input[name="travel"]:checked').value)
-    console.log(one, two, three, four, five);
-    //let one = randomNames()
-    //let two = randomNames()
+    console.log(one, two);
+   
     if (one + two <= 3) {
         document.querySelector('h2').innerText = ('HipHop')
         lastName()
     }
     else if
-        (one + two >= 7) {
+        (one + two >=5 ) {
         document.querySelector('h2').innerText = ('Rocker')
         lastName()
     }
@@ -44,7 +43,28 @@ function firstName() {
 
 }
 function lastName() {
-    let three = randomNames()
+    let three = Number(document.querySelector('input[name="timeOfDay"]:checked').value)
+    let four = Number(document.querySelector('input[name="socialMedia"]:checked').value)
+    let five = Number(document.querySelector('input[name="travel"]:checked').value)
+    console.log(three, four, five);
+    if (three + four + five <= 5)
+        document.querySelector('h3').innerText = ('CRNA')
+    else if
+        (three + four + five >= 7) {
+        document.querySelector('h3').innerText = ('NP')
+    }
+
+    else {
+        document.querySelector('h3').innerText = ('RN')
+    }
+
+}
+/*
+Note to self: thought process 
+
+ //let one = randomNames()
+    //let two = randomNames()
+let three = randomNames()
     let four = randomNames()
     let five = randomNames()
     if (three === four && three === five && four === five)
@@ -58,4 +78,4 @@ function lastName() {
         document.querySelector('h3').innerText = ('RN')
     }
 
-}
+*/
